@@ -1,0 +1,585 @@
+/*PARTE GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #556C58;
+}
+
+/*PARTE DA ABERTURA*/
+.abertura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#imagem_de_fundo {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(47%);
+    object-position: center 16%;
+}
+
+#logo_principal {
+   position: absolute;
+   width: 400px;
+   height: auto;
+}
+
+/*PARTE DA NAVEGAÇÃO*/
+#anchorMenu {
+    position: fixed;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #556C58;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.texto_para_nav {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.circle:hover .texto_para_nav {
+    background-color: #3c4a3e;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*PARTE SOBRE*/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    gap: 50px;
+}
+
+.sobre h2 {
+    font-size: 45px;
+}
+
+.sobre_texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre_texto p {
+    margin: 10px;
+    font-size: 20px;
+    text-align: right;
+    max-width: 600px;
+}
+
+.sobre_imagens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sobre_divisao_01 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sobre_divisao_02 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.sobre_imagens_geral { 
+    width: 100%; height: auto; 
+    border-radius: 10px;
+}
+
+#sobre_imagem_01 {
+    height: 622px;
+    width: 300px;
+}
+
+#sobre_imagem_02 {
+    height: 300px;
+    width: 315px;
+}
+
+#sobre_imagem_03 {
+    height: 308px;
+    width: 150px;
+}
+
+#sobre_imagem_04 {
+    height: 308px;
+    width: 150px;
+}
+
+/*PARTE PRATOS*/
+.pratos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.pratos h2 {
+    font-size: 45px;
+}
+
+.pratos_buffet, .pratos_cafe, .pratos_congelados {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.pratos_buffet h3, .pratos_cafe h3, .pratos_congelados h3 {
+    font-size: 2vw;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pratos_hover_imagens {
+    background-color: #556C58;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 10px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.hover_imagens {
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover_imagens:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+/*PARTE GALERIA*/
+.trocar_cor_fundo {
+    background-color: #0e0c0c;
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#galeria h2 {
+    font-size: 45px;
+    margin: 50px;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 40px; 
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.carousel-item p {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 13px;
+    color: black;
+    font-size: medium;
+    margin:30px 12px 0;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    max-width: 615px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #556C58;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*PARTE PROPRIETARIA*/
+#proprietaria {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #556C58;
+}
+
+#proprietaria h2 {
+    font-size: 45px;
+    margin: 50px 30px;
+}
+
+.proprietaria_imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#proprietaria_luciane {
+    margin: 20px;
+    border-radius: 15px;
+    width: 600px;
+    height: auto;
+}
+
+.proprietaria_texto h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.proprietaria_texto p {
+    font-size: 3vh;
+    max-width: 600px;
+}
+
+/*PARTE LOCALIZAÇÃO*/
+#localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+#localizacao h2 {
+    font-size: 45px;
+}
+
+#fila_colher_garfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 12px solid; 
+    background-color: #556C58;
+    border-radius: 22px;
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 
+    auto 30px; 
+}
+
+#mapa_id {
+    border-radius: 14px;
+    width: 600px;
+    height: 450px;
+}
+
+#mapa p { 
+    margin: 10px; 
+    margin-left: 20px; 
+    color: white; 
+    font-size: large; 
+}
+
+.colher_garfo {
+    width: auto;
+    height: 500px;
+}
+
+/*PARTE FOOTER (RODAPE)*/
+#rodape {
+    height: 20vh; 
+    background-color: #556C58; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rodape section {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+#icon_instagram {
+    filter: brightness(1000%);
+}
+
+#icon_whatsApp {
+    filter: invert(100%);
+}
+
+.dividir {
+    height: 40px;
+    width: 2px;
+    margin: 0 10px;
+    background-color: white;
+}
+
+#rodape p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PARTE MOBILE*/
+@media (max-width: 768px) {
+
+/*PARTE ABERTURA*/
+#logo_principal {
+    width: 300px;
+    height: auto;
+ }
+
+/*PARTE NAV*/
+#anchorMenu {
+    visibility: hidden;
+}
+
+/*PARTE SOBRE*/
+.sobre_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.sobre_texto p {
+    margin: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.sobre_imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    height: auto;
+}
+
+.sobre_divisao_01, .sobre_divisao_02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*PARTE PRATOS*/
+.pratos {
+    margin: 20px;
+}
+
+.pratos_buffet, .pratos_cafe, .pratos_congelados {
+    flex-direction: column;
+    align-items: center;
+}
+
+.pratos_buffet h3, .pratos_cafe h3, .pratos_congelados h3 {
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pratos_hover_imagens {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hover_imagens {
+    width: 230px;
+    height: 200px;
+}
+
+
+/*PARTE GALERIA*/
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+/*PARTE PROPRIETARIA*/
+.proprietaria_imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#proprietaria_luciane {
+    max-width: 80%;
+    height: auto;
+}
+
+.proprietaria_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proprietaria_texto H3 {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.proprietaria_texto p {
+    max-width: 70%;
+    height: auto;
+    text-align: justify;
+}
+
+/*PARTE LOCALIZAÇÃO*/
+#localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#localizacao h2 {
+    margin: 30px;
+}
+
+#fila_colher_garfo {
+    flex-direction: column;
+}
+
+#mapa_id {
+    width: 100%;
+    height: auto;
+}
+
+.colher_garfo {
+    display: none;
+}
+
+/*PARTE FOOTER (RODAPE)*/
+
+
+
+/*PARTE TITULOS MOBILE*/
+#galeria .titulos_media, #proprietaria .titulos_media, #localizacao  .titulos_media, #sobre .titulos_media, #pratos .titulos_media {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+}

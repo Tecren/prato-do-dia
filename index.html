@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Alves Teixeira e Guilherme Conti Machado">
+    <meta name="description" content="Site do restaurante Dom da Lu, desenvolvido com finalidade de ser um trabalho universitário">
+    <title>Dom da Lu</title>
+    <link rel="icon" href="./imagens/logo/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+    <script src="./input/input.js" defer></script>
+</head>
+<body>
+    <!-- MENU COM CIRCULOS -->
+    <nav id="anchorMenu">
+        <div data-target="sobre" class="circle"><span class="texto_para_nav">Sobre</span></div>
+        <div data-target="pratos" class="circle"><span class="texto_para_nav">Pratos</span></div>
+        <div data-target="galeria" class="circle"><span class="texto_para_nav">Galeria</span></div>
+        <div data-target="proprietaria" class="circle"><span class="texto_para_nav">Proprietária</span></div>
+        <div data-target="localizacao" class="circle"><span class="texto_para_nav">Localização</span></div>
+    </nav>
+
+    <section class="abertura">
+        <img id="imagem_de_fundo" src="./imagens/logo/imagem-fundo-02.jpg">
+        <img id="logo_principal" src="./imagens/logo/logo-sem-fundo-01.png">
+    </section>
+
+
+    <!--PARTE SOBRE-->
+    <section class="sobre" id="sobre">
+        <h2 class="titulos_media">SOBRE</h2>
+        <section class="sobre_texto">
+            <!--TEXTO PARTE SOBRE-->
+            <p>Idealizado em 2020, durante a pandemia do COVID-19, O Dom da Lu surgiu como uma alternativa de renda para a proprietária Luciane Rafeal Oliveira e seus parceiros, trazendo uma abordagem diferente e viável para aquele período, as comidas congeladas.
+                Inicialmente apenas no ramo das pizzas congeladas, o Dom da Lu Congelados começou a crescer e aumento seu cardápio, dando diferentes opções de alimentos prontos, sempre com o enfoque de serem saudáveis, caseiros e muito gostosos.
+                Depois de alguns tempo, o Dom da Lu teve enfim morada própria, se estabelecendo no Centro de Araranguá, na Av. 15 de Novembro, 1764.
+                Devido a localização privilegiada, a ideia de um buffet ao meio-dia logo veio, e se mostrou um grande sucesso.
+                Com o movimento continuo do centro da cidade e o pedido dos clientes mais afincos, também foi possível proporcionar o café da tarde, com  alimentos focados em serem sem glúten e sem lactose, contudo, podendo ter a contaminação cruzada.
+                Com a prática de já gerenciar outros restaurantes de sucesso, o Dom da Lu continua a crescer, se empenhando em sempre proporcionar comidas saborosas e um ambiente agradável e acolhedor.
+            </p>
+            <section class="sobre_imagens">
+            <!--IMAGENS PARTE SOBRE-->
+                <article class="sobre_divisao_01">
+                    <article class="sobre_divisao_02">
+                        <img class="sobre_imagens_geral" id="sobre_imagem_02" src="./imagens/sobre/sobre-02.jpg">
+                    </article>
+                    <article class="sobre_divisao_02">
+                        <img class="sobre_imagens_geral" id="sobre_imagem_03" src="./imagens/sobre/sobre-03.jpg">
+                        <img class="sobre_imagens_geral" id="sobre_imagem_04" src="./imagens/sobre/sobre-04.jpg">
+                    </article>
+                </article>
+                <article class="sobre_divisao_01">
+                    <img class="sobre_imagens_geral" id="sobre_imagem_01" src="./imagens/sobre/sobre-01.jpg">
+                </article>
+            </section>
+        </section>
+    </section>
+
+    <section class="pratos" id="pratos">
+        <h2 class="titulos_media">PRATOS</h2>
+        <section class="pratos_buffet">
+            <h3>BUFFET</h3>
+            <article class="pratos_hover_imagens">
+                <!--5 IMAGENS DO BUFFET-->
+                <img class="hover_imagens" src="./imagens/pratos/buffet/buffet-01.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/buffet/buffet-02.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/buffet/buffet-03.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/buffet/buffet-04.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/buffet/buffet-05.jpg">
+            </article>
+        </section>
+        <section class="pratos_cafe">
+            <h3>CAFÉ</h3>
+            <article class="pratos_hover_imagens">
+                <!--5 IMAGENS DO CAFÉ DA TARDE-->
+                <img class="hover_imagens" src="./imagens/pratos/café da tarde/cafe-01.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/café da tarde/cafe-02.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/café da tarde/cafe-03.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/café da tarde/cafe-04.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/café da tarde/cafe-05.jpg">
+            </article>
+        </section>
+        <section class="pratos_congelados">
+            <h3>CONGELADOS</h3>
+            <article class="pratos_hover_imagens">
+                <!--5 IMAGENS DOS CONGELADOS-->
+                <img class="hover_imagens" src="./imagens/pratos/congelados/congelados-01.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/congelados/congelados-02.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/congelados/congelados-03.png">
+                <img class="hover_imagens" src="./imagens/pratos/congelados/congelados-04.jpg">
+                <img class="hover_imagens" src="./imagens/pratos/congelados/congelados-05.jpg">
+            </article>
+        </section>
+    </section>
+
+    <section class="trocar_cor_fundo">
+        <section class="galeria" id="galeria">
+            <h2 class="titulos_media">GALERIA</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/galeria/galeria-01.jpg">
+                        <p>Homenageando a cidade de Araranguá, o restaurante é decorado com fotos do Morro dos Conventos, ponto turístico e cartão postal da cidade.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-02.jpg">
+                        <p>Do fotografo Enio Frassetto, as fotos apresentam as belezas naturais que a região local possui.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-03.webp">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-04.webp">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-05.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-06.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-07.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-08.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-09.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-10.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/galeria/galeria-11.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+    </section>
+
+    <section id="proprietaria">
+        <h2 class="titulos_media">PROPRIETÁRIA</h2>
+        <article class="proprietaria_imagem">
+            <img id="proprietaria_luciane" src="./imagens/parceiros/parceiros-01.jpg">
+            <article class="proprietaria_texto">
+                <h3>LUCIANE RAFAEL OLIVEIRA</h3>
+                <p>Luciane Rafael Oliveira, mãe do Pedro, empresária, Araranguaense, apaixonada por cavalos.
+                    Desde muito cedo demonstrou interesse pela culinária, vindo a cursar Turismo e Gastronomia, na UNISUL, onde se formou, tendo como tema de seu TCC uma loja de produtos congelados.   
+                    Sócia do Restaurante Santo Réu, e fundadora do Dom da Lu Congelados, apresentando uma linha de congelados saudáveis e com gosto de comida caseira.
+                </p>
+            </article>
+        </article>
+    </section>
+
+    <section id="localizacao">
+        <h2 class="titulos_media">LOCALIZAÇÃO</h2>
+        <article id="fila_colher_garfo">
+            <img class="colher_garfo" src="./imagens/localização/colher-garfo-linha-01.png">
+            <article id="mapa">
+                <iframe id="mapa_id"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1468.1125008907065!2d-49.482230030272575!3d-28.93459091988018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952233fc1bfff7d5%3A0xc647d08ad7b2bbbd!2sDomdaLu%20Restaurante%20%26%20Café!5e0!3m2!1spt-BR!2sbr!4v1731698249759!5m2!1spt-BR!2sbr"
+                    width="600"
+                    height="450"
+                    style="border-radius: 14px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p>Av. 15 de Novembro - 1764<br>Centro - Araranguá</p>
+            </article>
+            <img class="colher_garfo" src="./imagens/localização/colher-garfo-linha-02.png">
+        </article>
+    </section>
+</body>
+
+<footer id="rodape">
+    <section class="rodape_conteiner">
+        <article class="rodade_intagram">
+            <a href="https://www.instagram.com/congeladosdomdalu/" target="_blank">
+                <img id="icon_instagram" src="./imagens/logo/logo-instagram.webp" alt="Instagram" width="40">
+            </a>
+            <img id="icon_whatsApp" src="./imagens/logo/zipzup.png" alt="WhatsApp" width="38"> 
+        </article>
+        <div class="dividir"></div> 
+        <artcile class="contato"> 
+            <p>Contato: (48) 99915-5482</p>
+        </article>
+        <article class="funcionamento">
+            <p>Aberto de segunda a sexta - 10:30 as 19:30</p>
+        </article>
+    </section>
+</footer>
+</html>
