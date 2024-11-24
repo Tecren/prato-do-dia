@@ -13,13 +13,14 @@
 <body>
     <!-- MENU COM CIRCULOS -->
     <nav id="anchorMenu">
-        <div data-target="sobre" class="circle"><span class="texto_para_nav">Sobre</span></div>
-        <div data-target="pratos" class="circle"><span class="texto_para_nav">Pratos</span></div>
-        <div data-target="galeria" class="circle"><span class="texto_para_nav">Galeria</span></div>
-        <div data-target="proprietaria" class="circle"><span class="texto_para_nav">Proprietária</span></div>
-        <div data-target="localizacao" class="circle"><span class="texto_para_nav">Localização</span></div>
+        <a href="#sobre" class="circle" ><span class="texto_para_nav">Sobre</span></a>
+        <a href="#pratos" class="circle" ><span class="texto_para_nav">Pratos</span></a>
+        <a href="#galeria" class="circle" ><span class="texto_para_nav">Galeria</span></a>
+        <a href="#proprietaria" class="circle" ><span class="texto_para_nav">Proprietária</span></a>
+        <a href="#localizacao" class="circle" ><span class="texto_para_nav">Localização</span></a>
     </nav>
 
+    <!--PARTE DA ABERTURA (IMAGEM DE FUNDO COM LOGO)-->
     <section class="abertura">
         <img id="imagem_de_fundo" src="./imagens/logo/imagem-fundo-02.jpg">
         <img id="logo_principal" src="./imagens/logo/logo-sem-fundo-01.png">
@@ -56,6 +57,7 @@
         </section>
     </section>
 
+    <!--PARTE PRATOS-->
     <section class="pratos" id="pratos">
         <h2 class="titulos_media">PRATOS</h2>
         <section class="pratos_buffet">
@@ -93,54 +95,56 @@
         </section>
     </section>
 
+    <!--PARTE GALERIA-->
     <section class="trocar_cor_fundo">
         <section class="galeria" id="galeria">
             <h2 class="titulos_media">GALERIA</h2>
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <section class="carousel">
+                <section class="carousel-inner">
+                    <article class="carousel-item active">
                         <img src="imagens/galeria/galeria-01.jpg">
                         <p>Homenageando a cidade de Araranguá, o restaurante é decorado com fotos do Morro dos Conventos, ponto turístico e cartão postal da cidade.</p>
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-02.jpg">
                         <p>Do fotografo Enio Frassetto, as fotos apresentam as belezas naturais que a região local possui.</p>
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-03.webp">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-04.webp">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-05.jpg">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-06.jpg">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-07.jpg">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-08.jpg">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-09.jpg">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-10.jpg">
-                    </div>
-                    <div class="carousel-item">
+                    </article>
+                    <article class="carousel-item">
                         <img src="imagens/galeria/galeria-11.jpg">
-                    </div>
-                </div>
+                    </article>
+                </section>
                 <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
                 <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
-            </div>
+            </section>
         </section>
     </section>
 
-    <section id="proprietaria">
+    <!--PARTE PROPRIETARIA-->
+    <section class="proprietaria" id="proprietaria">
         <h2 class="titulos_media">PROPRIETÁRIA</h2>
         <article class="proprietaria_imagem">
             <img id="proprietaria_luciane" src="./imagens/parceiros/parceiros-01.jpg">
@@ -154,11 +158,12 @@
         </article>
     </section>
 
-    <section id="localizacao">
+    <!--PARTE LOCALIZAÇÃO-->
+    <section class="localizacao" id="localizacao">
         <h2 class="titulos_media">LOCALIZAÇÃO</h2>
-        <article id="fila_colher_garfo">
+        <article class="fila_colher_garfo">
             <img class="colher_garfo" src="./imagens/localização/colher-garfo-linha-01.png">
-            <article id="mapa">
+            <article class="mapa">
                 <iframe id="mapa_id"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1468.1125008907065!2d-49.482230030272575!3d-28.93459091988018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952233fc1bfff7d5%3A0xc647d08ad7b2bbbd!2sDomdaLu%20Restaurante%20%26%20Café!5e0!3m2!1spt-BR!2sbr!4v1731698249759!5m2!1spt-BR!2sbr"
                     width="600"
@@ -174,14 +179,16 @@
         </article>
     </section>
 </body>
-
-<footer id="rodape">
-    <section class="rodape_conteiner">
-        <article class="rodade_intagram">
+<!--PARTE FOOTER-->
+<footer class="rodape" id="rodape">
+    <section class="rodape_conteudo">
+        <article class="rodade_intagram_whatsapp">
             <a href="https://www.instagram.com/congeladosdomdalu/" target="_blank">
                 <img id="icon_instagram" src="./imagens/logo/logo-instagram.webp" alt="Instagram" width="40">
             </a>
-            <img id="icon_whatsApp" src="./imagens/logo/zipzup.png" alt="WhatsApp" width="38"> 
+            <a href="https://wa.me/554899155482" target="_blank">
+                <img id="icon_whatsApp" src="./imagens/logo/zipzup.png" alt="WhatsApp" width="36">
+            </a> 
         </article>
         <div class="dividir"></div> 
         <artcile class="contato"> 

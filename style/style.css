@@ -2,14 +2,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     color: #556C58;
 }
 
 /*PARTE DA ABERTURA*/
 .abertura {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -40,6 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    margin: 12px;
 }
 
 .circle {
@@ -47,16 +48,14 @@
     height: 25px;
     border-radius: 50%;
     background-color: #556C58;
-    margin: 10px;
     position: relative;
-    display: inline-block;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .texto_para_nav {
     visibility: hidden;
     width: 120px;
-    background-color: black;
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -99,7 +98,7 @@
 
 .sobre_texto p {
     margin: 10px;
-    font-size: 20px;
+    font-size: 3vh;
     text-align: right;
     max-width: 600px;
 }
@@ -124,7 +123,8 @@
 }
 
 .sobre_imagens_geral { 
-    width: 100%; height: auto; 
+    width: 100%; 
+    height: auto; 
     border-radius: 10px;
 }
 
@@ -188,7 +188,6 @@
     padding: 15px 10px;
     width: 100%;
     height: auto;
-    
 }
 
 .hover_imagens {
@@ -209,14 +208,14 @@
     background-color: #0e0c0c;
 }
 
-#galeria {
+.galeria {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#galeria h2 {
+.galeria h2 {
     font-size: 45px;
     margin: 50px;
     color: white;
@@ -286,15 +285,14 @@
 }
 
 /*PARTE PROPRIETARIA*/
-#proprietaria {
+.proprietaria {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: #556C58;
 }
 
-#proprietaria h2 {
+.proprietaria h2 {
     font-size: 45px;
     margin: 50px 30px;
 }
@@ -323,19 +321,20 @@
 }
 
 /*PARTE LOCALIZAÇÃO*/
-#localizacao {
+.localizacao {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 50px;
+    gap: 20px;
 }
 
-#localizacao h2 {
+.localizacao h2 {
     font-size: 45px;
 }
 
-#fila_colher_garfo {
+.fila_colher_garfo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -343,19 +342,17 @@
     gap: 15px;
 }
 
-#mapa {
+.mapa {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
     border: 12px solid; 
     background-color: #556C58;
     border-radius: 22px;
     overflow: hidden; 
     width: 100%; 
     max-width: 600px; 
-    margin: 0 
-    auto 30px; 
+    margin: 0 auto 30px; 
 }
 
 #mapa_id {
@@ -364,7 +361,7 @@
     height: 450px;
 }
 
-#mapa p { 
+.mapa p { 
     margin: 10px; 
     margin-left: 20px; 
     color: white; 
@@ -377,7 +374,7 @@
 }
 
 /*PARTE FOOTER (RODAPE)*/
-#rodape {
+.rodape {
     height: 20vh; 
     background-color: #556C58; 
     display: flex;
@@ -385,7 +382,7 @@
     align-items: center;
 }
 
-#rodape section {
+.rodape_conteudo {
     margin: 0 10px;
     display: flex;
     align-items: center;
@@ -406,9 +403,7 @@
     background-color: white;
 }
 
-#rodape p {
-    margin: 0;
-    padding: 0;
+.rodape p {
     color: white;
 }
 
@@ -516,6 +511,10 @@
     object-position: left;
 }
 
+.carousel-item p {
+    font-size: 15px;
+}
+
 /*PARTE PROPRIETARIA*/
 .proprietaria_imagem {
     display: flex;
@@ -543,18 +542,19 @@
 
 .proprietaria_texto p {
     max-width: 70%;
+    font-size: 15px;
     height: auto;
     text-align: justify;
 }
 
 /*PARTE LOCALIZAÇÃO*/
-#localizacao {
+.localizacao {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#localizacao h2 {
+.localizacao h2 {
     margin: 30px;
 }
 
@@ -572,7 +572,16 @@
 }
 
 /*PARTE FOOTER (RODAPE)*/
+.rodade_intagram_whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
+.dividir {
+    height: 60px;
+    width: 2px;
+}
 
 
 /*PARTE TITULOS MOBILE*/
