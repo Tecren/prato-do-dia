@@ -1,11 +1,3 @@
-//PARTE DA NAVEGAÇÃO//
-document.querySelectorAll('.circle').forEach(circle => {
-    circle.addEventListener('click', function() {
-        const target = this.getAttribute('data-target');
-        document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
-    });
-});
-
 //PARTE DO CARROSSEL//
 let currentIndex = 0;
 function moveCarousel(direction) {
