@@ -583,6 +583,7 @@
 #proprietaria_luciane {
     max-width: 80%;
     height: auto;
+    margin: 0 0 20px 0;
 }
 
 .proprietaria_texto {
@@ -595,13 +596,15 @@
     text-align: center;
     max-width: 100%;
     height: auto;
+    padding: 0;
 }
 
 .proprietaria_texto p {
-    max-width: 70%;
+    max-width: 80%;
     font-size: 15px;
     height: auto;
     text-align: justify;
+    padding: 0;
 }
 
 /*PARTE LOCALIZAÇÃO*/
@@ -620,9 +623,8 @@
 }
 
 .mapa {
-    width: 400px;
-    height: 200px;
-    padding-bottom: 5px;
+    width: 150%;
+    height: auto;
 }
 
 #mapa_id {
